@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CoffeShop</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.js">
+	<link rel="stylesheet" href="assets/css/bootstrap.css"> 
+</head>
+<body>
+	<div class="row">
+		<div class="col-md-2">
+			<center>
+				<div class="card">
+					<div class="card-header" id="head"><img src="list-symbol-of-three-items-with-dots_icon-icons.com_72994.png" width="25"></div>
+					<div class="card-body">
+						<img src="recipe_cutlery_spoon_fork_icon_147447.png" width="35"><br> <br>
+						<img src="taskboardmono_105883.png" width="35"><br><br>
+						<img src="Plus_36851.png" width="35"></h2> <br> <br>
+						<center><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addmodal">
+						Add
+					</button></center>
+					</div>
+				</div>
+			</center>
+		</div>
+		<div class="col-md-7">
+			<div class="card" id="layoutbox1">
+				<div class="card-header">
+					<div class="col-md-12 text-right">
+						<img src="1490129321-rounded10_82180.png" width="25">
+						<h5 style="font-family: cursive; color: black; text-align: center;">Food Item</h5>
+					</div>
+				</div>
+				<div class="card-body">
+					<div class="row">
+						<div class="col-md-4">
+							<img src="icon/1.png" width="200">
+							esspresso <br> Rp.10.000
+						</div>
+						<div class="col-md-4">
+							<img src="icon/2.png" width="200">
+							Coffe lette <br> Rp.15.000
+						</div>
+						<div class="col-md-4">
+							<img src="icon/3.png" width="200">
+							Cappucino <br> Rp.5.000
+						</div>
+						<div class="col-md-4">
+							<img src="icon/4.png" width="200">
+							Redvelvet Latte <br> Rp.33.000
+						</div>
+						<div class="col-md-4">
+							<img src="icon/5.png" width="200">
+							Choco rum <br> Rp.28.000
+						</div>
+						<div class="col-md-4">
+							<img src="icon/6.png" width="200">
+							black forest <br> Rp.30.000
+						</div>
+						<div class="col-md-4">
+							<img src="icon/7.png" width="200">
+							chicken katsu <br> Rp.60.000
+						</div>
+						<div class="col-md-4">
+							<img src="icon/8.png" width="200">
+							salmon truffl <br> Rp.60.000
+						</div>
+						<div class="col-md-4">
+							<img src="icon/9.png" width="200">
+							wiener schnitzel <br> Rp.69.000
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card" id="layoutbox2">
+				<div class="card-header" id="head2">
+					<h2 align="center">Cart</h2>
+				</div>
+				<div class="card-body">
+					<img style="float: left;" src="icon/2.png" width="70">
+					<h6 id="h6tulisan">coffe lette </h6>
+					<h6 id="h6harga"> Rp.10.000 </h6>
+					<div class="box-min">
+						<div>-</div>
+						<div>1</div>
+						<div>+</div>
+					</div>
+					<br>
+					<img style="float: left;" src="icon/6.png" width="70">
+					<h6 id="h6tulisan">Black forest </h6>
+					<h6 id="h6harga"> Rp.10.000 </h6>
+					<div class="box-min">
+						<div>-</div>
+						<div>1</div>
+						<div>+</div>
+					</div>
+					<img style="float: left;" src="icon/8.png" width="70">
+					<h6 id="h6tulisan">Salmon truffl </h6>
+					<h6 id="h6harga"> Rp.10.000 </h6>
+					<div class="box-min">
+						<div>-</div>
+						<div>1</div>
+						<div>+</div>
+					</div>
+					<div class="but">
+						<h5 style="float: left; margin-right: 20px;">Total :</h5>
+						<h6 style="float: right;">Rp.105.000</h6>
+						<h5 style="float: left;">*belum termasuk Ppn</h5>
+						<button type="button" class="btn btn-danger btn-block" data-toggle="modal" data-target="#co">Checkout</button>
+						<button class="btn btn-success btn-block">Cancel</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="addmodal" tabindex="-1" role="dialog" aria-labelledby="modalSayaLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="modalSayaLabel">Add Item</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<label>Nama</label>
+							<input type="text" name="" class="form-control">
+						</div>
+						<div class="form-group">
+							<label>Image</label>
+							<input type="file" name="" class="form-control">
+						</div>
+						<div class="form-group">
+							<label>Price</label>
+							<input type="text" name="" class="form-control">
+						</div>
+						<div class="form-group">
+							<label>Kategori</label>
+							<select class="form-control">
+								<option></option>
+								<option>Makanan</option>
+								<option>Minuman</option>
+							</select>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+						<button type="button" class="btn btn-primary">Add</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="co" tabindex="-1" role="dialog" aria-labelledby="modalSayaLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="modalSayaLabel">Checkout <br> Cashier : pevita pearce <br>
+						Receipt no :#045678967</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div id="makanan">
+							<h5>Coffe Lette 1x</h5>
+							<h5>Black Forest 1x</h5>
+							<h5>Salmon Truffle Teriyaki 1x</h5>
+							<h5>Ppn 10%</h5>
+							<br> <br> <br> 
+							<h5>Payment : Cash</h5>
+						</div>
+						<div id="harga">
+							<h6>Rp.15.000</h6>
+							<h6>Rp.30.000</h6>
+							<h6>Rp.60.000</h6>
+							<br>
+							<h6>Rp.10.500</h6>
+							<br> <br> 
+							<h6>Total: Rp.115.500</h6>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger btn-block" data-dismiss="modal">Print</button>
+						<button type="button" class="btn btn-success btn-block">Send Email</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="assets/js/jquery.js"></script> 
+	<script src="assets/js/popper.js"></script> 
+	<script src="assets/js/bootstrap.js"></script>
+	<!-- <script  src="assets/js/canvasjs.min.js"></script> -->
+</body>
+</html>

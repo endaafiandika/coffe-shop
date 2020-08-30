@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CoffeShop</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.js">
+	<link rel="stylesheet" href="assets/css/bootstrap.css"> 
+</head>
+<body>
+	
+	<div class="wrap">
+
+		<aside class="sidebar2">
+			<div class="widget2">
+				<center>
+					<h2><img src="list-symbol-of-three-items-with-dots_icon-icons.com_72994.png" width="25"></h2>
+					<hr>
+					<h2><img src="recipe_cutlery_spoon_fork_icon_147447.png" width="35"></h2>
+					<h2><img src="taskboardmono_105883.png" width="35"></h2>
+					<h2><img src="Plus_36851.png" width="35"></h2></center>
+				</div>
+		</aside>
+
+			<div class="blog">
+				<div class="conten">
+					<img src="1490129321-rounded10_82180.png" width="25">
+					<h2 style="font-family: cursive; color: black;">History</h2>
+					<hr>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="card shadow-sm rounded bg-danger">
+								<div class="card-body" style="color: white; text-align: center;">Todays Income <br> Rp.1.000.000 <br> +2% yesterday</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card shadow-sm rounded bg-primary">
+								<div class="card-body" style="color: white; text-align: center;">ORDERS <br> 3.270 <br> +5% last week</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card shadow-sm rounded bg-warning">
+								<div class="card-body" style="color: white; text-align: center;">this Years Income <br> Rp.100.000.000.000 <br> +10 year last year</div>
+							</div>
+						</div>
+						<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+			<script src="assets/js/jquery.js"></script> 
+			<script src="assets/js/popper.js"></script> 
+			<script src="assets/js/bootstrap.js"></script>
+			<script  src="assets/js/canvasjs.min.js"></script>
+			<script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	theme: "light2",
+	title:{
+		text: "Revenue"
+	},
+	data: [{        
+		type: "line",
+      	indexLabelFontSize: 16,
+		dataPoints: [
+			{ y: 450 },
+			{ y: 414},
+			{ y: 520, indexLabel: "\u2191 highest",markerColor: "red", markerType: "triangle" },
+			{ y: 460 },
+			{ y: 450 },
+			{ y: 500 },
+			{ y: 480 },
+			{ y: 480 },
+			{ y: 410 , indexLabel: "\u2193 lowest",markerColor: "DarkSlateGrey", markerType: "cross" },
+			{ y: 500 },
+			{ y: 480 },
+			{ y: 510 }
+		]
+	}]
+});
+chart.render();
+
+}
+</script>
+		</body>
+		</html>
